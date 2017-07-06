@@ -1,0 +1,213 @@
+sub_category_id,imma_id_code,order,name,description,,rec_quantity_10,rec_quantity_20,rec_quantity_30,rec_quantity_40,,comment ,,more_than_24,less_than_24 ,less_than_2 ,,dosage ,reference ,ordering_size,quantity_required 
+B.001.00,B.001.01,2,"Portable oxygen set, complete containing:",,,1,1,1,1,,Appliances for the administration of Oxygen. See pages 4-5*,,,,,,,,,
+B.001.00,B.001.02,3,"Oxygen cylinder, 21/200 bar",,,1,1,1,1,,Ready to use. See pages 4-5*,,,,,,,,,
+B.001.00,B.001.03,4,"Spare Oxygen cylinder, 21/200 bar",,,1,1,1,1,,"If no additional equipment from the MFAG is on board,
+consider increasing the amount of Oxygen to 4. See pages 4-5*",,,,,,,,,
+B.001.00,B.001.04,5,"Pressure regulating unit and flow meter with 
+tubes such that the ship's industrial Oxygen
+can also be used",,,1,1,1,1,,See pages 4-5*,,,,,,,,,
+B.001.00,B.001.05,6,"3 disposable face masks of choice: 
+including a simple face mask and
+non-rebreathing mask",,,1,2,3,4,,See pages 4-5*,,,,,,,,,
+B.001.00,B.001.06,7,Guedel airway (Mayotube); size medium,,,1,1,1,1,,"Oropharyneal airway. See pages 4-5, 315*",,,,,,,,,
+B.001.00,B.001.07,8,Guedel airway (Mayotube); size large,,,1,1,1,1,,"Oropharyneal airway. See pages 4-5, 315*",,,,,,,,,
+B.001.00,B.001.08,9,Manual aspirator to clear upper airways,,,1,1,1,1,,Mechanical aspirator. See pages 4-5*,,,,,,,,,
+B.001.00,B.001.09,10,Catheters for aspirator,,,2,2,2,2,,"Mechanical aspirator, different sizes. See pages 45*",,,,,,,,,
+B.001.00,B.001.10,11,"Ambubag or equivalent; supplied with small, 
+medium, and large masks",,,1,1,1,1,,"Bag and mask resuscitator including oxygen reservoir
+bag and oxygen tubing. See pages 4-5*",,,,,,,,,
+B.001.00,B.001.11,12,"Brook Airway, Lifeway, pocket mask or 
+equivalent",,,1,1,1,1,,"Cannula for mouth-to-mouth resuscition, see pages 4-5*",,,,,,,,,
+B.002.00,B.002.01,2,"Assorted wound plasters or plaster strips, 
+water resistant",,,200,200,200,200,,Adhesive Dressings,,,,,,,,,
+B.002.00,B.002.02,3,"Sterile gauze compresses, 5cm x 5cm",,,50,50,100,100,,,,,,,,,,,
+B.002.00,B.002.03,4,"Sterile gauze compresses, 10cm x 10cm",,,50,50,100,100,,,,,,,,,,,
+B.002.00,B.002.04,5,"Gauze roll, 5cm, 60cm or 90cm x 100m, 
+non-sterile",,,1,1,1,1,,"Gauze roll, 60cm/90cm may be substituted by gauze roll
+of smaller size",,,,,,,,,
+B.002.00,B.002.05,6,"Non-adherent gauze dressing, 
+square 10cm x 10cm",,,10,20,30,40,,,,,,,,,,,
+B.002.00,B.002.06,7,"Parafin gauze dressing 10cm x 10cm, sterile",,,40,40,40,40,,Vaseline gauze,,,,,,,,,
+B.002.00,B.002.07,8,"Elastic fixation bandage, 6cm x 4m",,,3,6,9,12,,Bandage,,,,,,,,,
+B.002.00,B.002.08,9,"First-aid absorbent gauze-covered cotton 
+pad sewn onto a cotton bandage
+(ambulance dressing), small",,,5,5,10,10,,Sterile compression bandages,,,,,,,,,
+B.002.00,B.002.09,10,"First-aid absorbent gauze-covered cotton 
+pad sewn onto a cotton bandage
+(ambulance dressing), medium",,,5,5,10,10,,Sterile compression bandages,,,,,,,,,
+B.002.00,B.002.10,11,"First-aid absorbent gauze-covered cotton 
+pad sewn onto a cotton bandage
+(ambulance dressing), large",,,5,5,10,10,,Sterile compression bandages,,,,,,,,,
+B.002.00,B.002.11,12,"Tubular gauze bandage for fingers, 5m",,,1,1,1,1,,See pages 53-58*,,,,,,,,,
+B.002.00,B.002.12,13,Applicator for finger bandage,,,1,1,1,1,,See pages 53-58*,,,,,,,,,
+B.002.00,B.002.13,14,Adhesive elastic bandage 6cm x 4m,,,10,10,10,10,,,,,,,,,,,
+B.002.00,B.002.14,15,Triangular sling,,,5,5,5,5,,See pages 43-58 and 77*,,,,,,,,,
+B.002.00,B.002.15,16,Sterile sheets for burn patients,,,2,2,4,4,,"Different sizes, see pages 79-83*",,,,,,,,,
+B.002.00,B.002.16,17,Honey for dressing burns 1kg (must be purified),,,1,1,2,2,,"Only if honey for medical purposes available,
+otherwise use a hydrogel burn kit, see pages 79-83*",,,,,,,,,
+B.002.00,B.002.17,18,"Adhesive tape, waterproof, skin friendly, 
+1.25cm x 5m",,,3,3,6,6,,Adhesive sutures or zinc oxide bandages,,,,,,,,,
+B.002.00,B.002.18,19,Q-tips – wooden,,,100,100,100,100,,,,,,,,,,,
+B.002.00,B.002.19,20,"Safety pins – stainless steel, 12 pieces",,,1,1,2,2,,,,,,,,,,,
+B.002.00,B.002.20,21,"Butterfly sutures, Steristrip®, or 
+Leukostrip®, sterile",,,50,50,50,50,,See pages 69-74*,,,,,,,,,
+B.002.00,B.002.21,22,"2-octyl cyanoacrylate liquid, 0.5ml",,,1,1,1,1,,"Skin adhesive for closing small wounds,
+see pages 69-74*",,,,,,,,,
+B.002.00,B.002.22,23,"Sutures, absorbable with curved non-traumatic 
+needles, 1-0",,,3,3,6,6,,"See pages 71-74, replace existing with non-absorbable
+sutures for easier use*",,,,,,,,,
+B.002.00,B.002.23,24,"Sutures, absorbable with curved non-traumatic 
+needles, 3-0",,,3,3,6,6,,"See pages 71-74, replace existing with non-absorbable
+sutures for easier use*",,,,,,,,,
+B.002.00,B.002.24,25,"Sutures, absorbable with curved non-traumatic 
+needles, 4-0 or 5-0",,,3,3,6,6,,"See pages 71-74, replace existing with non-absorbable
+sutures for easier use*",,,,,,,,,
+B.002.00,B.002.25,26,Disposable examination gloves size M,,,100,100,100,100,,,,,,,,,,,
+B.002.00,B.002.26,27,Disposable examination gloves size L,,,100,100,100,100,,,,,,,,,,,
+B.002.00,B.002.27,28,"Surgical gloves size 6.5, sterile in pairs",,,3,4,5,6,,Gloves sterile,,,,,,,,,
+B.002.00,B.002.28,29,"Surgical gloves size 7.5, sterile in pairs",,,3,4,5,6,,Gloves sterile,,,,,,,,,
+B.002.00,B.002.29,30,"Surgical gloves size 8.5, sterile in pairs",,,3,4,5,6,,Gloves sterile,,,,,,,,,
+B.002.00,B.002.30,31,Eye pads,,,1,2,3,4,,"See pages 36, 38*",,,,,,,,,
+B.003.00,B.003.01,2,"Scalpel, serile disposable",,,10,10,10,10,,"See pages 71-74, 216-219*",,,,,,,,,
+B.003.00,B.003.02,3,Instrument box – stainless steel,,,1,1,1,1,,,,,,,,,,,
+B.003.00,B.003.03,4,"Operating scissors, straight, stainless steel",,,1,1,1,1,,,,,,,,,,,
+B.003.00,B.003.04,5,Bandage scissors,,,1,1,1,1,,,,,,,,,,,
+B.003.00,B.003.05,6,"Splinter forceps, pointed, stainless steel",,,1,1,1,1,,,,,,,,,,,
+B.003.00,B.003.06,7,"Teeth tissue forceps, stainless steel",,,1,1,1,1,,"See pages 71-74, 216-219*",,,,,,,,,
+B.003.00,B.003.07,8,"Needle holder, Mayo Hegar 180mm, straight",,,1,1,1,1,,see pages 71-74*,,,,,,,,,
+B.003.00,B.003.08,9,"Haemostatic clamp, Halstead mosquito, 
+125mm, stainless steel",,,2,2,2,2,,,,,,,,,,,
+B.003.00,B.003.09,10,"Razor, disposable",,,5,5,5,5,,,,,,,,,,,
+B.004.00,B.004.01,2,"Tongue depressors, disposable",,,100,100,100,100,,,,,,,,,,,
+B.004.00,B.004.02,3,"Reactive strips for urine analysis: 
+blood/glucose/protein/nitrite/leukoctes",,,50,50,100,100,,"See pages 311-312, 324*",,,,,,,,,
+B.004.00,B.004.03,4,Microscope slides,,,12,12,12,12,,See pages 265-269*,,,,,,,,,
+B.004.00,B.004.04,5,Stethoscope,,,1,1,1,1,,,,,,,,,,,
+B.004.00,B.004.05,6,"Sphgmomanometer (blood pressure set – 
+preferably automatic)",,,1,1,1,1,,,,,,,,,,,
+B.004.00,B.004.06,7,"Standard thermometer, digital if possible",,,2,2,3,3,,See pages 302-304*,,,,,,,,,
+B.004.00,B.004.07,8,"Rectal thermometer, digital if possible",,,1,1,1,1,,See pages 302-304*,,,,,,,,,
+B.004.00,B.004.08,9,"Thermometer 32-34ºC, digital if possible",,,1,1,1,1,,"Preferred range 26-42ºC to differentiate between
+severe-moderate-mild hypothermia. See pages 343-344*",,,,,,,,,
+B.004.00,B.004.09,10,Penlight + blue cover,,,1,1,1,1,,To detect damaged cornea. See pages 33-34*,,,,,,,,,
+B.004.00,B.004.10,11,Waterproof indelible marker,,,1,1,1,1,,See page 29*,,,,,,,,,
+B.004.00,B.004.11,12,Magnifying glass (a x loupe),,,1,1,1,1,,See pages 33-34*,,,,,,,,,
+B.005.00,B.005.01,2,Temperature cards/charts,,,10,10,10,10,,Use as master copy from page 302*,,,,,,,,,
+B.005.00,B.005.02,3,Cards for telemedical advise,,,10,10,10,10,,"Use as master copy. Should be filled in before calling
+radiomedical advise",,,,,,,,,
+B.005.00,B.005.03,4,Medical logbook,,,1,1,1,1,,See page 455*,,,,,,,,,
+B.005.00,B.005.04,5,Controlled Drug Register,,,1,1,1,1,,,,,,,,,,,
+B.005.00,B.005.05,6,"International Medical Guide For Ships, 
+3rd Edition, published by the WHO",,,1,1,1,1,,Hard Copy,,,,,,,,,
+B.005.00,B.005.06,7,"Forms from Annex A, 
+Ship Master's report form",,,10,10,10,10,,"Use as master copy. See pages 455-461.
+File in medical log. See page 455*",,,,,,,,,
+B.005.00,B.005.07,8,"Forms from Annex A, 
+Ship's identity and navigational status form",,,10,10,10,10,,Use as master copy. See pages 455-461*,,,,,,,,,
+B.005.00,B.005.08,9,"Forms from annex A, 
+Patient health status form",,,10,10,10,10,,Use as master copy. See pages 455-461*,,,,,,,,,
+B.005.00,B.005.09,10,"Forms from Annex A, 
+Primary physician's report form",,,10,10,10,10,,Use as master copy. See pages 455-461*,,,,,,,,,
+B.005.00,B.005.10,11,Vaccination requirements,,,1,1,1,1,,"International Travel and Health, current edition, WHO",,,,,,,,,
+B.005.00,B.005.11,12,Malaria prophylaxis treatment,,,1,1,1,1,,"www.who.int/malaria/Publications or
+www.cdc.gov/travel/regionalmalaria/index
+See page 266*",,,,,,,,,
+B.006.00,B.006.01,2,"Syringes, Luer connection, 2ml, sterile, 
+disposable",,,10,20,30,40,,See pages 324-329*,,,,,,,,,
+B.006.00,B.006.02,3,"Syringes, Luer connection, 5ml, sterile, 
+disposable",,,10,20,30,40,,See pages 324-329*,,,,,,,,,
+B.006.00,B.006.03,4,"Syringes, Luer connection, 10ml, sterile, 
+disposable",,,10,20,30,40,,See pages 324-329*,,,,,,,,,
+B.006.00,B.006.04,5,"Hypodermic subcutaneous injection, 
+Luer connection, 16 x 0.5mm (23G or 25G),
+sterile, disposable",,,20,30,40,50,,"Equipment for subcutaneous injection
+See pages 324-329*",,,,,,,,,
+B.006.00,B.006.05,6,"Hypodermic intramuscular needle 
+(19G or 21G), Luer connection,
+40 x 0.8mm, sterile, disposable",,,20,30,40,50,,Equipment for intramuscular injection. See pages 324-329*,,,,,,,,,
+B.006.00,B.006.06,7,"Needles, 19G or 21G, blunt, “drawing up” type",,,20,30,40,50,,"Equipment for drawing medicine into the syringe.
+See pages 324-329*",,,,,,,,,
+B.006.00,B.006.07,8,"Intravenous infusion cannula 16G (1.7mm) 
+or 19G, Luer-lock connection, sterile,
+non-recap type + mandarin",,,5,5,10,10,,See page 326*,,,,,,,,,
+B.006.00,B.006.08,9,"Intravenous infusion cannula 22G (0.8mm) 
+or 21G, Luer-lock connection, sterile,
+non-recap type + mandarin",,,5,5,10,10,,See page 326*,,,,,,,,,
+B.006.00,B.006.09,10,"Intravenous giving set, Luer-lock connection, 
+sterile + 3-way valve/connection",,,5,5,10,10,,See pages 324-329*,,,,,,,,,
+B.006.00,B.006.10,11,"Tourniquet, blood taking type to be used 
+with intravenous infusion cannular",,,1,1,1,1,,See pages 324-329*,,,,,,,,,
+B.006.00,B.006.11,12,"Penile sheath set with condom catheter, 
+tube and bag",,,1,1,1,1,,Bladder drainage equipment. See pages 308-309*,,,,,,,,,
+B.006.00,B.006.12,13,Indwelling urine catheter 14CH,,,1,1,1,1,,Bladder drainage equipment. See pages 319-321*,,,,,,,,,
+B.006.00,B.006.13,14,"Short term urine catheter with soft-eye 
+straight tip Thiermann No 12, or equivalent",,,2,2,2,2,,Bladder drainage equipment. See pages 319-321*,,,,,,,,,
+B.006.00,B.006.14,15,"Short term urine catheter with soft-eye 
+straight tip Thiermann No 16, or equivalent",,,2,2,2,2,,Bladder drainage equipment. See pages 319-321*,,,,,,,,,
+B.006.00,B.006.15,16,"Complete sterile urine catheterization set with 
+lubricant, drapes, cotton swabs, skin
+disinfection, forceps, sterile container",,,2,2,2,2,,Bladder drainage equipment. See pages 319-321*,,,,,,,,,
+B.006.00,B.006.16,17,Urine collecting bag and tube,,,2,2,2,2,,Bladder drainage equipment: See pages 319-321*,,,,,,,,,
+B.007.00,B.007.01,2,Plastic goggles or full face mask,,,1,1,1,1,,Eye protection,,,,,,,,,
+B.007.00,B.007.02,3,Disposable plastic apron,,,10,10,10,10,,,,,,,,,,,
+B.007.00,B.007.03,4,"Kidney dish, stainless steel 825ml",,,1,1,2,2,,,,,,,,,,,
+B.007.00,B.007.04,5,"Towels, plastic backed, absorbent, 
+600 x 500mm",,,10,10,10,10,,,,,,,,,,,
+B.007.00,B.007.05,6,"Safety box for sharps, 1-5 ltrs",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.06,7,"Mask, duckbill type, disposable",,,50,50,100,100,,,,,,,,,,,
+B.007.00,B.007.07,8,"Tape measure, vinyl coated, 1.5m",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.08,9,"Draw sheet, plastic 90 x 180cm",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.09,10,"Bedpan, stainless steel",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.10,11,Hot water bag,,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.11,12,"Urinal, male – plastic",,,1,1,1,1,,Urine bottle,,,,,,,,,
+B.007.00,B.007.12,13,Cold/Hot pack maxi,,,1,1,1,1,,Icebag,,,,,,,,,
+B.007.00,B.007.13,14,Aluminium foil blanket,,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.14,15,Male condoms,,,100,200,300,400,,Assorted sizes,,,,,,,,,
+B.007.00,B.007.15,16,Plastic wash bottle 250ml,,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.16,17,"Bottle, 1ltr, plastic with screw top",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.17,18,"Stainless steel dressing tray, 300 x 200 x 30mm",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.18,19,"Bowl, stainless steel, 180ml",,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.19,20,"Jars, plastic, with lids and lables 100ml",,,10,20,30,40,,Specimen Jars,,,,,,,,,
+B.007.00,B.007.20,21,"Bandages, POP, 5cm x 2.7m",,,6,6,6,6,,"Plaster-of-Paris bandages, may be omitted
+if splints are carried",,,,,,,,,
+B.007.00,B.007.21,22,"Bandages, POP, 10cm x 2.7m",,,6,6,6,6,,"Plaster-of-Paris bandages, may be omitted
+if splints are carried",,,,,,,,,
+B.007.00,B.007.22,23,Stockinet sizes for arm splints 10m roll,,,1,1,1,1,,See pages 43-58*,,,,,,,,,
+B.007.00,B.007.23,24,Stockinet sizes for leg splints 10m roll,,,1,1,1,1,,See pages 43-58*,,,,,,,,,
+B.007.00,B.007.24,25,Cotton wool roll 500gm,,,1,1,2,2,,See pages 43-58*,,,,,,,,,
+B.007.00,B.007.25,26,Alcohol swabs,,,100,100,100,100,,70% alcohol swabs for skin cleansing prior to injection,,,,,,,,,
+B.007.00,B.007.26,27,Nail brush,,,1,1,1,1,,,,,,,,,,,
+B.007.00,B.007.27,28,Thermometer for refrigerator,,,1,1,1,1,,If Tetanus vaccine and immunoglobin are on board,,,,,,,,,
+B.007.00,B.007.28,29,Mortuary transfer bag,,,1,1,1,1,,Body bag,,,,,,,,,
+B.008.00,B.008.01,2,"Water disinfection set including measuring 
+kit/test strips for pH and for residual chlorine",,,1,1,1,1,,"To disinfect potable water tanks with chlorine
+effectively. See pages 359-360*",,,,,,,,,
+B.008.00,B.008.02,3,"Disinfectant solution for medical instruments, 
+1000ml: 3% aqueous phenolic solution",,,1,1,1,1,,"For disinfection of used instruments and thermometers
+See page 331*
+Caution: All items entering the skin in direct contact with mucous
+membranes should be single use only i.e. injection needles,
+urinary catheters",,,,,,,,,
+B.008.00,B.008.03,4,"Disinfectant for surfaces and floor, 1 1 1 1
+1000ml concentrate: 2% cetrimide solution or
+3% aqueous phenolic solution",,,1,1,1,1,,"For disinfectaion of contaminated surfaces,
+hard-surface objects and floors (non-food-handling
+area). See page 331*",,,,,,,,,
+B.008.00,B.008.04,5,"Disinfectant for surfaces and floor, 
+1000ml concentrate: sodium hypochlorite
+100mg/litre",,,2,2,2,2,,"For disinfection of food-handling area:
+cutlery, dishes, plates, glasses. See page 331*",,,,,,,,,
+B.008.00,B.008.05,6,Chlorpyrifos 5gm/ltr in bait stations or gel,,,20,20,20,20,,"To use against cockroaches in food storage and
+preparation areas. See pages 362-365*",,,,,,,,,
+B.008.00,B.008.06,7,"Chlorpyrifos-methyl 710gm/ltr, spray 1 piece",,,10,10,10,10,,"To use against cockroaches in other areas
+than food storage and preparation area. Ssee pages 362-365*",,,,,,,,,
+B.008.00,B.008.07,8,"Insecticide spray, permethrine, natural 
+pyrethrinsm or chlorpyrifos-methyl",,,1,2,3,4,,"For space spraying, not for skin. See pages 362-365*",,,,,,,,,
+B.009.00,B.009.01,2,Malleable finger splint – small,,,1,1,1,1,,,,,,,,,,,
+B.009.00,B.009.02,3,Malleable forearm/hand splint – medium,,,2,2,2,2,,,,,,,,,,,
+B.009.00,B.009.03,4,Malleable leg splint – large,,,2,2,2,2,,,,,,,,,,,
+B.009.00,B.009.04,5,Stretcher,,,1,1,1,1,,"Stretcher equipment (a system for trauma
+management, i.e. Immobilization and stretcher equipment
+most suited for treatment in the vessel concerned.
+Preferably allowing crane/helicopter lifting. See page 7*",,,,,,,,,
+B.009.00,B.009.05,6,Cervical ridged collar variable size,,,1,1,1,1,,"For neck immobilization. See pages 7, 45*",,,,,,,,,

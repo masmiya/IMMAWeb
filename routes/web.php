@@ -13,8 +13,12 @@
 
 Route::get('/', 'HomeController@ports');
 
-Auth::routes();
 
+
+
+Auth::routes();
+Route::get('/link', 'UploadController@processLink');
+Route::post('/uploaduserdoc', 'UploadController@processUpload');
 
 Route::get('/ports', 'HomeController@ports')->name('ports');
 Route::get('/ports/{id}/edit', 'HomeController@showEditPort');
@@ -58,13 +62,13 @@ Route::post('/products/{id}/subproducts/{subid}/edit', 'HomeController@storeSubP
 
 Route::get('/categories', 'HomeController@showCategories')->name('categories');
 Route::get('/categories/new', 'HomeController@showCreateCategory');
-Route::get('/categories/{id}/edit', 'HomeController@showEditCategory');
 Route::get('/categories/{id}/delete', 'HomeController@deleteCategory');
 Route::post('/categories/new', 'HomeController@newCategory');
 Route::post('/categories/{id}/edit', 'HomeController@storeCategory');
+Route::get('/categories/{id}/edit', 'HomeController@showEditCategory');
 
-Route::get('/categories/{id}/subcategories/new', 'HomeController@showCreateSubCategory');
-Route::get('/categories/{id}/subcategories/{subid}/edit', 'HomeController@showEditSubCategory');
-Route::get('/categories/{id}/subcategories/{subid}/delete', 'HomeController@deleteSubCategory');
-Route::post('/categories/{id}/subcategories/new', 'HomeController@createSubCategory');
-Route::post('/categories/{id}/subcategories/{subid}/edit', 'HomeController@storeSubCategory');
+// Route::get('/categories/{id}/subcategories/new', 'HomeController@showCreateSubCategory');
+// Route::get('/categories/{id}/subcategories/{subid}/edit', 'HomeController@showEditSubCategory');
+// Route::get('/categories/{id}/subcategories/{subid}/delete', 'HomeController@deleteSubCategory');
+// Route::post('/categories/{id}/subcategories/new', 'HomeController@createSubCategory');
+// Route::post('/categories/{id}/subcategories/{subid}/edit', 'HomeController@storeSubCategory');

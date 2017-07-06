@@ -44,6 +44,19 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label>Port</label>
+                                    <select class="form-control" name="port_id">
+                                        @foreach($ports as $port)
+                                        @if($port->id == $supplier->port_id)
+                                        <option value="{{$port->id}}" selected>{{$port->name}}</option>
+                                        @else
+                                        <option value="{{$port->id}}">{{$port->name}}</option>
+                                        @endif
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
                                     <label>ISSA Membership Number</label>
                                     <input class="form-control" name="issa_membership_number" value="{{$supplier->issa_membership_number}}">
                                 </div>

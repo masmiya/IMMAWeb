@@ -6,13 +6,12 @@ use App\Category;
 use App\GlobalDoc;
 use App\Product;
 use App\Setting;
-use App\SubCategory;
-use App\SubProduct;
 use App\UserDoc;
 use Illuminate\Http\Request;
 use App\Port;
 use App\PortSupplier;
 use App\User;
+use App\Link;
 use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
@@ -131,7 +130,15 @@ class HomeController extends Controller
     /* Port Suppliers */
 
     public function suppliers(Request $request) {
-        $suppliers = PortSupplier::all();
+        $port_id = $request->input('port_id');
+
+        if ($port_id == null) {
+            $suppliers = PortSupplier::all();
+        } else {
+            $port = Port::findOrFail($port_id);
+            $suppliers = $port->suppliers();
+        }
+        
 
         return view('pages.suppliers.suppliers', [
             'suppliers' => $suppliers
@@ -139,14 +146,19 @@ class HomeController extends Controller
     }
 
     public function showNewSupplier(Request $request) {
-        return view('pages.suppliers.new_supplier');
+        $ports = Port::all();
+        return view('pages.suppliers.new_supplier', [
+                'ports' => $ports
+            ]);
     }
 
     public function showEditSupplier(Request $request, $id) {
         $supplier = PortSupplier::find($id);
+        $ports = Port::all();
 
 
         return view('pages.suppliers.edit_supplier', [
+            'ports' => $ports,
             'supplier' => $supplier
         ]);
     }
@@ -156,6 +168,10 @@ class HomeController extends Controller
 
         if($request->has('company_name')) {
             $supplier->company_name = $request->input('company_name');
+        }
+
+        if($request->has('port_id')) {
+            $supplier->port_id = $request->input('port_id');
         }
 
         if($request->has('issa_membership_number')) {
@@ -230,6 +246,10 @@ class HomeController extends Controller
 
         if($request->has('company_name')) {
             $supplier->company_name = $request->input('company_name');
+        }
+
+        if($request->has('port_id')) {
+            $supplier->port_id = $request->input('port_id');
         }
 
         if($request->has('issa_membership_number')) {
@@ -346,7 +366,10 @@ class HomeController extends Controller
 
         $admin->name = $request->input('admin_username');
         $admin->email = $request->input('admin_email');
-        $admin->password = Hash::make($request->input('admin_password'));
+        if($request->has('admin_password') && $request->input('admin_password') != "") {
+            $admin->password = Hash::make($request->input('admin_password'));
+        }
+        
         $admin->save();
 
         if($request->has('order_emails')) {
@@ -497,11 +520,9 @@ class HomeController extends Controller
 
     public function showEditCategory(Request $request, $id) {
         $c = Category::findOrNew($id);
-        $subcategories = $c->subcategories();
 
         return view('pages.categories.edit_category', [
             'category'=>$c,
-            'subcategories'=>$subcategories,
         ]);
     }
 
@@ -565,11 +586,11 @@ class HomeController extends Controller
 
     public function showEditSubCategory(Request $request, $id, $subid) {
         $c = Category::findOrFail($id);
-        $s = SubCategory::findOrFail($subid);
+        // $s = SubCategory::findOrFail($subid);
 
         return view('pages.categories.edit_subcategory', [
             'category'=>$c,
-            'subcategory' =>$s,
+            // 'subcategory' =>$s,
         ]);
     }
 
@@ -621,22 +642,39 @@ class HomeController extends Controller
      */
 
     public function showProducts(Request $request) {
-        $products = Product::all();
+        if($request->has('category_id')) {
+            $category_id = $request->input('category_id');
+            $category = Category::find($category_id);
+        } else {
+            $category = Category::first();
+        }
+
+        $products = $category->productsOnly();
+
+        $categories = Category::all();
 
         return view('pages.products.products', [
-            'products' => $products
+            'products' => $products,
+            'categories' => $categories,
+            'category_id' => $category->id,
         ]);
     }
 
     public function showCreateProduct(Request $request) {
-        return view('pages.products.new_product');
+        $categories = Category::orderBy('order')->get();
+        return view('pages.products.new_product', [
+                'categories'=>$categories,
+            ]);
     }
 
     public function showEditProduct(Request $request, $id) {
         $p = Product::findOrNew($id);
         $subproducts = $p->subproducts();
 
+        $categories = Category::orderBy('order')->get();
+
         return view('pages.products.edit_product', [
+            'categories'=>$categories,
             'product'=>$p,
             'subproducts'=>$subproducts
         ]);
@@ -657,9 +695,10 @@ class HomeController extends Controller
 
         $p = new Product;
 
-        if($request->has('sub_category_id')) {
-            $p->sub_category_id = $request->input('sub_category_id');
+        if($request->has('category_id')) {
+            $p->category_id = $request->input('category_id');
         }
+        $p->sub_product_of = "";
 
         if($request->has('imma_id_code')) {
             $p->imma_id_code = $request->input('imma_id_code');
@@ -675,7 +714,6 @@ class HomeController extends Controller
         if($request->has('description')) {
             $p->description = $request->input('description');
         }
-
 
 
         if($request->has('rec_quantity_10')) {
@@ -743,7 +781,7 @@ class HomeController extends Controller
 
         $p->save();
 
-        return redirect()->route('products');
+        return redirect('/products/'.$p->id.'/edit');
     }
 
     public function storeProduct(Request $request, $id) {
@@ -846,16 +884,18 @@ class HomeController extends Controller
 
     public function showEditSubProduct(Request $request, $id, $subid) {
         $p = Product::findOrFail($id);
-        $s = SubProduct::findOrFail($subid);
+        $s = Product::findOrFail($subid);
+        $subproducts = $p->subproducts();
 
         return view('pages.products.edit_subproduct', [
             'product'=>$p,
             'sub_product' =>$s,
+            'subproducts' =>$subproducts,
         ]);
     }
 
     public function deleteSubProduct(Request $request, $id, $subid) {
-        $s = SubProduct::find($subid);
+        $s = Product::find($subid);
 
         if($s != null)
         {
@@ -866,19 +906,71 @@ class HomeController extends Controller
     }
 
     public function createSubProduct(Request $request, $id) {
-        $s = new SubProduct();
-        $s->product_id = $id;
-
-        if($request->has('product_id')) {
-            $s->product_id = $request->input('product_id');
-        }
+        $s = new Product();
+        $p = Product::find($id);
+        $s->sub_product_of = $p->imma_id_code;
+        $s->category_id = $p->category_id;
 
         if($request->has('imma_id_code')) {
             $s->imma_id_code = $request->input('imma_id_code');
         }
 
+        if($request->has('order')) {
+            $s->order = $request->input('order');
+        }
+
+        if($request->has('name')) {
+            $s->name = $request->input('name');
+        }
         if($request->has('description')) {
             $s->description = $request->input('description');
+        }
+
+        if($request->has('rec_quantity_10')) {
+            $s->rec_quantity_10 = $request->input('rec_quantity_10');
+        }
+
+        if($request->has('rec_quantity_20')) {
+            $s->rec_quantity_20 = $request->input('rec_quantity_20');
+        }
+        if($request->has('rec_quantity_30')) {
+            $s->rec_quantity_30 = $request->input('rec_quantity_30');
+        }
+
+        if($request->has('rec_quantity_40')) {
+            $s->rec_quantity_40 = $request->input('rec_quantity_40');
+        }
+
+        if($request->has('comment')) {
+            $s->comment = $request->input('comment');
+        }
+
+        if($request->has('more_than_24')) {
+            $s->more_than_24 = $request->input('more_than_24');
+        }
+
+        if($request->has('less_than_24')) {
+            $s->less_than_24 = $request->input('less_than_24');
+        }
+
+        if($request->has('less_than_2')) {
+            $s->less_than_2 = $request->input('less_than_2');
+        }
+
+        if($request->has('dosage')) {
+            $s->dosage = $request->input('dosage');
+        }
+
+        if($request->has('reference')) {
+            $s->reference = $request->input('reference');
+        }
+
+        if($request->has('ordering_size')) {
+            $s->ordering_size = $request->input('ordering_size');
+        }
+
+        if($request->has('quantity_required')) {
+            $s->quantity_required = $request->input('quantity_required');
         }
 
         if($request->hasFile('image')) {
@@ -886,7 +978,7 @@ class HomeController extends Controller
             $id = $s->id;
 
 
-            $file_name = 's'.$id.'.' .
+            $file_name = 'p'.$id.'.' .
                 $request->file('image')->getClientOriginalExtension();
 
 
@@ -903,26 +995,75 @@ class HomeController extends Controller
     }
 
     public function storeSubProduct(Request $request, $id, $subid) {
-        $s = SubProduct::find($subid);
-        $s->product_id = $id;
-
-        if($request->has('product_id')) {
-            $s->product_id = $request->input('product_id');
-        }
+        $s = Product::find($subid);
 
         if($request->has('imma_id_code')) {
             $s->imma_id_code = $request->input('imma_id_code');
         }
 
+        if($request->has('order')) {
+            $s->order = $request->input('order');
+        }
+
+        if($request->has('name')) {
+            $s->name = $request->input('name');
+        }
         if($request->has('description')) {
             $s->description = $request->input('description');
+        }
+
+        if($request->has('rec_quantity_10')) {
+            $s->rec_quantity_10 = $request->input('rec_quantity_10');
+        }
+
+        if($request->has('rec_quantity_20')) {
+            $s->rec_quantity_20 = $request->input('rec_quantity_20');
+        }
+        if($request->has('rec_quantity_30')) {
+            $s->rec_quantity_30 = $request->input('rec_quantity_30');
+        }
+
+        if($request->has('rec_quantity_40')) {
+            $s->rec_quantity_40 = $request->input('rec_quantity_40');
+        }
+
+        if($request->has('comment')) {
+            $s->comment = $request->input('comment');
+        }
+
+        if($request->has('more_than_24')) {
+            $s->more_than_24 = $request->input('more_than_24');
+        }
+
+        if($request->has('less_than_24')) {
+            $s->less_than_24 = $request->input('less_than_24');
+        }
+
+        if($request->has('less_than_2')) {
+            $s->less_than_2 = $request->input('less_than_2');
+        }
+
+        if($request->has('dosage')) {
+            $s->dosage = $request->input('dosage');
+        }
+
+        if($request->has('reference')) {
+            $s->reference = $request->input('reference');
+        }
+
+        if($request->has('ordering_size')) {
+            $s->ordering_size = $request->input('ordering_size');
+        }
+
+        if($request->has('quantity_required')) {
+            $s->quantity_required = $request->input('quantity_required');
         }
 
         if($request->hasFile('image')) {
             $id = $s->id;
 
 
-            $file_name = 's'.$id.'.' .
+            $file_name = 'p'.$id.'.' .
                 $request->file('image')->getClientOriginalExtension();
 
 
@@ -937,4 +1078,5 @@ class HomeController extends Controller
 
         return redirect('/products/'.$id.'/edit');
     }
+
 }

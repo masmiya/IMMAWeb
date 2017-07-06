@@ -38,7 +38,7 @@
                                 <th>Location</th>
                                 <th>Country</th>
                                 <th>Description</th>
-                                <th>Delete</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -50,6 +50,7 @@
                                     <td>{{$port->country}}</td>
                                     <td>{{$port->description}}</td>
                                     <td class="center remove-row">
+                                        <a href="{{url('ports/')}}/{{$port->id}}/edit">Edit</a>
                                         <a href="{{url('ports/')}}/{{$port->id}}/delete">Delete</a>
                                     </td>
                                 </tr>

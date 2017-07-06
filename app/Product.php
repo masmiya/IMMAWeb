@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-        'sub_category_id',
+        'category_id',
+        'sub_product_of',
         'imma_id_code',
         'order',
         'name',
@@ -26,11 +27,28 @@ class Product extends Model
         'ordering_size',
         'quantity_required',
     ];
+    protected $appends = ['image_full_path', 'has_subproduct'];
 
     protected $table = 'products';
 
     public function subproducts() {
-        $subproducts = SubProduct::where('product_id', $this->id)->get();
+        $subproducts = Product::where('sub_product_of', $this->imma_id_code)->get();
         return $subproducts;
+    }
+
+    public function getImageFullPathAttribute() {
+        if ($this->image_url != null && $this->image_url != "")
+            return asset($this->image_url);
+        else
+            return "";
+    }
+
+    public function getHasSubproductAttribute() {
+        $s = Product::where('sub_product_of', $this->imma_id_code)->get()->first();
+
+        if($s == null) 
+            return false;
+        else 
+            return true;
     }
 }

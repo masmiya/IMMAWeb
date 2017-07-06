@@ -40,6 +40,16 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label>Order</label>
+                                    <input class="form-control" name="order">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control" name="name">
+                                </div>
+
+                                <div class="form-group">
                                     <label>Description</label>
                                     <input class="form-control" name="description">
                                 </div>
@@ -47,6 +57,66 @@
                                 <div class="form-group">
                                     <label>Image</label>
                                     <input type="file" class="form-control" name="image">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>RecQuantity10</label>
+                                    <input class="form-control" name="rec_quantity_10">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>RecQuantity20</label>
+                                    <input class="form-control" name="rec_quantity_20">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>RecQuantity30</label>
+                                    <input class="form-control" name="rec_quantity_30">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>RecQuantity40</label>
+                                    <input class="form-control" name="rec_quantity_40">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Comment</label>
+                                    <input class="form-control" name="comment">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>More than 24</label>
+                                    <input class="form-control" name="more_than_24">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Less than 24</label>
+                                    <input class="form-control" name="less_than_24">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Less than 2</label>
+                                    <input class="form-control" name="less_than_2">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Dosage</label>
+                                    <input class="form-control" name="dosage">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Reference</label>
+                                    <input class="form-control" name="reference">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Ordering Size</label>
+                                    <input class="form-control" name="ordering_size">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Quantity Required</label>
+                                    <input class="form-control" name="quantity_required">
                                 </div>
 
 

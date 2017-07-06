@@ -43,6 +43,16 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label>Port</label>
+                                    <select class="form-control" name="port_id">
+                                        @foreach($ports as $port)
+                                        <option value="{{$port->id}}">{{$port->name}}</option>
+                                        @endforeach
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
                                     <label>ISSA Membership Number</label>
                                     <input class="form-control" name="issa_membership_number">
                                 </div>

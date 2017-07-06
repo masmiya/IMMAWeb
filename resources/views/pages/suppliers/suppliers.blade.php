@@ -2,8 +2,6 @@
 @section('title', 'Port Suppliers')
 @section('header')
 
-    <![endif]-->
-
 @endsection
 
 @section('content')
@@ -39,7 +37,7 @@
                                     <th>ISSA Membership Number</th>
                                     <th>Website</th>
                                     <th>Category</th>
-                                    <th>Delete</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -51,6 +49,7 @@
                                         <td>{{$supplier->website}}</td>
                                         <td>{{$supplier->category}}</td>
                                         <td class="center remove-row">
+                                            <a href="{{url('suppliers/')}}/{{$supplier->id}}/edit">Edit</a>
                                             <a href="{{url('suppliers/')}}/{{$supplier->id}}/delete">Delete</a>
                                         </td>
                                     </tr>

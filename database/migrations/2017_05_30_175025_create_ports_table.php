@@ -18,7 +18,9 @@ class CreatePortsTable extends Migration
             $table->string('name');
             $table->double('longitude')->default(0);
             $table->double('latitude')->default(0);
+            // $table->string('port_urls')->nullable();
             $table->string('country')->nullable();
+            // $table->string('country_urls')->nullable();
             $table->text('description');
 
             $table->timestamps();

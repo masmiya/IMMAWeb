@@ -1,0 +1,65 @@
+subcategory_id,imma_id_code,order,name,description,,rec_quantity_10,rec_quantity_20,rec_quantity_30,rec_quantity_40,,comment ,,more_than_24,less_than_24 ,less_than_2 ,,dosage ,reference ,ordering_size,quantity_required 
+C.001.00,A.005.00,2,Amoxicillin,,,,,,,,,,30 Capsules 500 mg,None,None,,3 x capsules,Table 9*,,
+C.001.00,C.001.01,3,Anasthetic Eye Drops Bottle,,,,,,,,,,5,5,5,,Several Drops,Table 7*,,
+C.001.00,C.001.02,4,Antibiotic Eye Ointment Tube,,,,,,,,,,5,5,None,,"Apply 2 to 4 daily or more frequently if
+required",Appendix 7*,,
+C.001.00,A.008.00,5,Atropine 1mg/ml injection,,,,,,,,,,15,15,15,,1mg x several,Table 17*,,
+C.001.00,C.001.03,6,"Beclomethasone (Including inhalation device) Inhalation aerosol 50?g/dose (200 doses) or 250?g/dose
+(200 doses)",,,,,,,,,,5 x 200 doses,5 x 200 doses,None,,250?g x several (5 puffs of 50?g/dose) or (1 puff of 250?g/dose),Table 9*,,
+C.001.00,C.001.04,7,"Budenoside (Including inhalation device) Inhalation aerosol 200?g/dose
+(100 doses)",,,,,,,,,,5 x 100 doses,5 x 100 doses,None,,400?g x several (2 puffs of 200mg/dose),Table 9*,,
+C.001.00,C.001.05,8,Calcium Gluconate Gel 2% (25gm tube),,,,,,,,,,5,5,5,,Apply several times," Tables 8, 16*",,
+C.001.00,C.001.06,9,"Calcium Gluconate Effervescent tablets
+1gm",,,,,,,,,,20,20,None,,5gm x 2,Table 16*,,
+C.001.00,C.001.07,10,"Cefuroxime Injection 750mg
+(750mg bottle)",,,,,,,,,,10,None,None,,750mg x 3,Table 10*,,
+C.001.00,A.012.00,11,Activate Charcoal,,,,,,,,,,2 x 50gm (50gm bottle),2 x 50gm,None,,50gm x 1,Table 10*,,
+C.001.00,C.001.08,12,"Activate Charcoal Effervescent granules
+(5gm sachet)",,,,,,,,,,10 x 5gm,10 x 5gm,None,,,,,
+C.001.00,C.001.09,13,Diazapam Rectal solution (10mg ampoule),,,,,,,,,,5 x 10mg,5 x 10mg,None,,10mg x 1 to 5,"Tables 4, 5 & 6*",,
+C.001.00,C.001.10,14,Erythromycin Tablets 500mg,,,,,,,,,,30 x 500 gm,None,None,,4 x 500g,Table 9*,,
+C.001.00,C.001.11,15,Ethyl Alcohol Solution 99.5% (500ml bottle),,,,,,,,,,3 x 500ml,1 x 500ml,None,,"25ml x 8 99.5% in 250 to 300ml water
+or soft drink",Table 19*,,
+C.001.00,A.021.00,16,Fluorescein Eye test strip,,,,,,,,,,1 package,None,None,,2 x 1 test strip,Appendix 7*,,
+C.001.00,A.022.00,17,"Frusemide Injection fluid 10mg/ml
+(5ml ampoule)",,,,,,,,,,5 x 5ml,None,None,,3 x 50mg,Tables 2 & 9*,,
+C.001.00,C.001.12,18,Metoclopramide Injection fluid 5mg/ml (2ml ampoule),,,,,,,,,,30 x 2ml,10 x 2ml,5 x 2ml,,3 x 10mg,"Tables 7, 8, 10, 13, 15 & 20*",,
+C.001.00,C.001.13,19,Metronidzole Suppositories 1gm,,,,,,,,,,10 x 1gm,None,None,,3 x 1gm,Table 10*,,
+C.001.00,C.001.14,20,Morphine Sulphate Injection fluid 10mg/ml (1ml ampoule),,,,,,,,,,40 x 1ml,10 x 1ml,5 x 1ml,,"6 or 7 
+10 to 20mg","Tables 7, 8,10, & 13*",,
+C.001.00,A.038.00,21,"Naloxone Injection fluid 0.4mg/ml
+(1ml ampoule)",,,,,,,,,,5 x 1ml,5 x 1ml,2 x 1ml,,1 to 5 x 0.4mg,"Tables 4, & 13*",,
+C.001.00,A.042.00,22,Oral Rehydration Salts Sachets or tablets to dissolve in water,,,,,,,,,,ORS to give 18ltr,ORS to give 6ltr,None,,1ltr x 3 or more,"Tables 8, 10 & 11*",,
+C.001.00,A.044.00,23,Paracetamol Tablets 500mg,,,,,,,,,,200 tabs,100 tabs,20 tabs,,1gm x 4,"Tables 7, 8 & 13*",,
+C.001.00,C.001.15,24,"Phytomenadione Injection fluid 10mg/ml
+(1ml ampoule)",,,,,,,,,,10 x 1ml,None,None,,10mg x 2 or more,Table 14*,,
+C.001.00,C.001.16,25,"Plasma Expander Gelatine based
+infusion fluid
+(500ml bottle)",,,,,,,,,,3 x 500ml,3 x 500ml,None,,500ml 1 x 3,Appendix 13*,,
+C.001.00,A.052.00,26,"Salbutamol Inhalation aerosol 100?g/dose (200 doses) (including inhalation
+device)",,,,,,,,,,5 x 200 doses,5 x 200 doses,1 x 200 doses,,200?g x several (2 puffs of 100?g/dose),Table 9*,,
+C.001.00,C.001.17,27,"Terbutaline Inhalation aerosol 500?g/dose (50 doses)
+(including inhalation
+device)",,,,,,,,,,5 x 50 doses,5 x 50 doses,1 x 50 doses,,500?g x several (1 puff of 500?g/dose),Table 9*,,
+C.001.00,C.001.18,28,"Sodium Chloride Isotonic (saline)
+9mg/ml (0.9%)
+(1ltr bottle)",,,,,,,,,,5 x 1ltr,3 x 1ltr,1 x 1ltr,,1ltr x 1 to 3,Table 7*,,
+C.002.00,C.002.01,2,Guedel Airway Size 2,,,,,,,,,,2,2,2,,,Appendix 3*,,
+C.002.00,C.002.02,3,Guedel Airway Size 3,,,,,,,,,,2,2,2,,,Appendix 3*,,
+C.002.00,C.002.03,4,Guedel Airway Size 4,,,,,,,,,,2,2,2,,,Appendix 3*,,
+C.002.00,C.002.04,5,IV Cannula Size 1.2,,,,,,,,,,10,10,None,,,Appendix 13*,,
+C.002.00,C.002.05,6,IV Set,,,,,,,,,,10,10,None,,,Appendix 13*,,
+C.002.00,C.002.06,7,Needles Size 0.8,,,,,,,,,,100,50,10,,,,,
+C.002.00,C.002.07,8,"Simple Face Mask (Allowing up to 60%
+oxygen) disposable",,,,,,,,,,10,10,2,,,Appendix 3*,,
+C.002.00,C.002.08,9,Manual Resuscitator Valve and bag,,,,,,,,,,2,2,2,,,Appendix 3*,,
+C.002.00,C.002.09,10,Oxygen Cylinder 40ltr/200bar,,,,,,,,,,1,1,None,,,Appendix 3*,,
+C.002.00,C.002.10,11,"Portable Oxygen Giving set ready for use
+2ltr/200bar",,,,,,,,,,1,1,1,,,Appendix 3*,,
+C.002.00,C.002.11,12,Spare Oxy. Cylinder 2ltr/200bar,,,,,,,,,,1,1,1,,,Appendix 3*,,
+C.002.00,C.002.12,13,"Rectal Infusion Set 
+Catheter (26 French guage)",,,,,,,,,,1,"None
+6","None
+None",,,Appendix 13*,,
+C.002.00,C.002.13,14,Syringes 2ml,,,,,,,,,,100,50,10,,,,,
+C.002.00,C.002.14,15,Syringes 5ml,,,,,,,,,,10,10,None,,,,,

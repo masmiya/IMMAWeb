@@ -59,43 +59,6 @@
                     </div>
                     <!-- /.panel -->
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Subcategory Information
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Sub Category Name</th>
-                                    <th>Order</th>
-                                    <th>Delete</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @forelse($subcategories as $subcategory)
-                                    <tr class="odd gradeX datarow" data-id="{{$category->id}}" data-subid="{{$subcategory->id}}">
-                                        <td>{{$subcategory->id}}</td>
-                                        <td>{{$subcategory->name}}</td>
-                                        <td>{{$subcategory->order}}</td>
-                                        <td class="center remove-row">
-                                            <a href="{{url('categories/')}}/{{$category->id}}/subcategories/{{$subcategory->id}}/delete">Delete</a>
-                                        </td>
-                                    </tr>
-                                @empty
-                                    <tr class="odd gradeA">
-                                        <td colspan="5">No records</td>
-                                    </tr>
-                                @endforelse
-
-                                </tbody>
-                            </table>
-
-                            <a class="btn btn-primary" href="{{url('categories/')}}/{{$category->id}}/subcategories/new">Add Category</a>
-                        </div>
-                    </div>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

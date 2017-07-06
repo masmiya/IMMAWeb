@@ -8,6 +8,7 @@ class PortSupplier extends Model
 {
     protected $fillable = [
         'company_name', 
+        'port_id',
         'issa_membership_number', 
         'website', 
         'category', 

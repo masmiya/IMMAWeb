@@ -30,12 +30,28 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
+                            <form method=post action="{{url('/products')}}">
+                                {{csrf_field()}}
+                                <div class="form-group">
+                                    <label>Category</label>
+                                    <select class="form-control" name="category_id" value="{{$category_id}}">
+                                        @foreach($categories as $category) 
+                                            @if($category_id == $category->id)
+                                            <option value="{{$category->id}}" selected>{{$category->name}}</option>
+                                            @else
+                                            <option value="{{$category->id}}">{{$category->name}}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </form>
+
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
                                     <th>IMMA ID Code</th>
+                                    <th>Name</th>
                                     <th>Order</th>
                                     <th>Description</th>
                                     <th>Image</th>
@@ -46,8 +62,8 @@
                                 @forelse($products as $product)
                                     <tr class="odd gradeX datarow" data-id="{{$product->id}}">
                                         <td>{{$product->id}}</td>
-                                        <td>{{$product->name}}</td>
                                         <td>{{$product->imma_id_code}}</td>
+                                        <td>{{$product->name}}</td>
                                         <td>{{$product->order}}</td>
                                         <td>{{$product->description}}</td>
                                         <td><img src="<?= asset($product->image_url)?>" height="100"></td>

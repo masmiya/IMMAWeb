@@ -37,7 +37,7 @@
                                     <th>Category Name</th>
                                     <th>Order</th>
                                     <th>Inormation</th>
-                                    <th>Delete</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -48,6 +48,7 @@
                                         <td>{{$category->order}}</td>
                                         <td>{{$category->info}}</td>
                                         <td class="center remove-row">
+                                            <a href="{{url('categories/')}}/{{$category->id}}/edit">Edit</a>
                                             <a href="{{url('categories/')}}/{{$category->id}}/delete">Delete</a>
                                         </td>
                                     </tr>

@@ -35,8 +35,16 @@
                             <form method="post" action="{{url('/products/')}}/{{$product->id}}/edit" enctype="multipart/form-data">
                                 {{csrf_field()}}
                                 <div class="form-group">
-                                    <label>Subcategory</label>
-                                    <input class="form-control" name="sub_category_id" value="{{$product->sub_category_id}}">
+                                    <label>Category</label>
+                                    <select class="form-control" name="category_id">
+                                        @foreach($categories as $category)
+                                            @if($category->id == $product->category_id)
+                                                <option value="{{$category->id}}" selected>{{$category->name}}</option>
+                                            @else
+                                                <option value="{{$category->id}}">{{$category->name}}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
@@ -56,7 +64,7 @@
 
                                 <div class="form-group">
                                     <label>Description</label>
-                                    <input class="form-control" name="name" value="{{$product->description}}">
+                                    <input class="form-control" name="description" value="{{$product->description}}">
                                 </div>
 
                                 <div class="form-group">
@@ -66,22 +74,22 @@
 
                                 <div class="form-group">
                                     <label>RecQuantity10</label>
-                                    <input class="form-control" name="req_quantity_10" value="{{$product->req_quantity_10}}">
+                                    <input class="form-control" name="rec_quantity_10" value="{{$product->rec_quantity_10}}">
                                 </div>
 
                                 <div class="form-group">
                                     <label>RecQuantity20</label>
-                                    <input class="form-control" name="req_quantity_20" value="{{$product->req_quantity_20}}">
-                                </div>
-
-                                <div class="form-group">
-                                    <label>RecQuantity40</label>
-                                    <input class="form-control" name="req_quantity_40" value="{{$product->req_quantity_40}}">
+                                    <input class="form-control" name="rec_quantity_20" value="{{$product->rec_quantity_20}}">
                                 </div>
 
                                 <div class="form-group">
                                     <label>RecQuantity30</label>
-                                    <input class="form-control" name="req_quantity_30" value="{{$product->req_quantity_30}}">
+                                    <input class="form-control" name="rec_quantity_40" value="{{$product->rec_quantity_30}}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>RecQuantity40</label>
+                                    <input class="form-control" name="rec_quantity_30" value="{{$product->rec_quantity_40}}">
                                 </div>
 
                                 <div class="form-group">
@@ -146,19 +154,22 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>IMMA ID Code</th>
+                                    <th>Name</th>
                                     <th>Description</th>
                                     <th>Image</th>
-                                    <th>Delete</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @forelse($subproducts as $subproduct)
                                     <tr class="odd gradeX datarow" data-id="{{$product->id}}" data-subid="{{$subproduct->id}}">
                                         <td>{{$subproduct->id}}</td>
-                                        <td>{{$subproduct->imma_id_code}}</td>
+                                        <td><a href="">{{$subproduct->imma_id_code}}</a></td>
+                                        <td>{{$subproduct->name}}</td>
                                         <td>{{$subproduct->description}}</td>
                                         <td><img src="<?= asset($subproduct->image_url)?>" height="100" ></td>
                                         <td class="center remove-row">
+                                            <a href="{{url('products/')}}/{{$product->id}}/subproducts/{{$subproduct->id}}/edit">Edit</a>
                                             <a href="{{url('products/')}}/{{$product->id}}/subproducts/{{$subproduct->id}}/delete">Delete</a>
                                         </td>
                                     </tr>

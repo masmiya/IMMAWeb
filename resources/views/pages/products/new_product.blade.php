@@ -35,8 +35,12 @@
                             <form method="post" action="{{url('/products/')}}/new" enctype="multipart/form-data">
                                 {{csrf_field()}}
                                 <div class="form-group">
-                                    <label>Subcategory</label>
-                                    <input class="form-control" name="sub_category_id">
+                                    <label>Category</label>
+                                    <select class="form-control" id="category_id" name="category_id">
+                                        @foreach($categories as $c)
+                                        <option value="{{$c->id}}">{{$c->name}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
@@ -56,7 +60,7 @@
 
                                 <div class="form-group">
                                     <label>Description</label>
-                                    <input class="form-control" name="name">
+                                    <input class="form-control" name="description">
                                 </div>
 
                                 <div class="form-group">
@@ -66,22 +70,22 @@
 
                                 <div class="form-group">
                                     <label>RecQuantity10</label>
-                                    <input class="form-control" name="req_quantity_10">
+                                    <input class="form-control" name="rec_quantity_10">
                                 </div>
 
                                 <div class="form-group">
                                     <label>RecQuantity20</label>
-                                    <input class="form-control" name="req_quantity_20">
-                                </div>
-
-                                <div class="form-group">
-                                    <label>RecQuantity40</label>
-                                    <input class="form-control" name="req_quantity_40">
+                                    <input class="form-control" name="rec_quantity_20">
                                 </div>
 
                                 <div class="form-group">
                                     <label>RecQuantity30</label>
-                                    <input class="form-control" name="req_quantity_30">
+                                    <input class="form-control" name="rec_quantity_30">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>RecQuantity40</label>
+                                    <input class="form-control" name="rec_quantity_40">
                                 </div>
 
                                 <div class="form-group">
@@ -144,4 +148,10 @@
 
     </div>
     <!-- /#wrapper -->
+@endsection
+
+@section('script')
+<script>
+       
+    </script>
 @endsection
