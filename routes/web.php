@@ -19,6 +19,37 @@ Route::get('/', 'HomeController@ports');
 Auth::routes();
 Route::get('/link', 'UploadController@processLink');
 Route::post('/uploaduserdoc', 'UploadController@processUpload');
+Route::get('/parselocations', function() {
+	$ports = App\Port::all();
+
+	foreach($ports as $port) {
+		if ($port->longitude == null) {
+			echo "<br>=======".$port->name."=======<br>";
+			$client = new \GuzzleHttp\Client(['timeout'=>600]);
+			$res = $client->request('GET', 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDGzOjQMfyBZs3zr5bm44LdRStrTs3yJKY', 
+				['query' => ['address'=>$port->name]]);
+
+			$body = $res->getBody();
+
+			$json = json_decode($body);
+
+			if($json->status == 'OK') {
+				
+				$location = $json->results[0]->geometry->location;
+				echo $location->lat.",".$location->lng;
+
+				$port->longitude = $location->lng;
+				$port->latitude = $location->lat;
+
+				$port->save();
+			} else {
+				echo $port;
+				echo $body;
+			}
+		}
+
+	}
+});
 
 Route::get('/ports', 'HomeController@ports')->name('ports');
 Route::get('/ports/{id}/edit', 'HomeController@showEditPort');
