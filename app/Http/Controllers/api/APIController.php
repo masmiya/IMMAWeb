@@ -101,9 +101,13 @@ class APIController extends Controller
         $admin = Setting::all()->first();
         $order_emails = $admin->order_emails;
 
+        $user = Auth::user();
+        $user_email = $user->email;
+
         $data['items'] = $purchase_items;
         if($order_emails && $order_emails != "") {
             $email_addresses = explode("\r\n", $order_emails);
+            $email_addresses[] = $user_email;
 
             if ($email_addresses && count($email_addresses) > 0) {
                 Mailgun::send(['html'=>'emails.purchase'], $data, function($message) use ($email_addresses){
@@ -111,7 +115,7 @@ class APIController extends Controller
                         $message->to($email, 'IMMA');
                     }
                     $message->from('test@test.com');
-                    $message->subject('IMMA Requeest');
+                    $message->subject('IMMA Request');
                 });
             } else {
 
