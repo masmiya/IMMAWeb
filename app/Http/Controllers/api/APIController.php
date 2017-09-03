@@ -121,6 +121,8 @@ class APIController extends Controller
 
             }
         }
+
+        return response()->json(['status'=>'OK']);
     }
 
     public function globaldocs() {
