@@ -99,11 +99,17 @@ class HomeController extends Controller
         }
 
         if($request->has('longitude')) {
-            $port->longitude = $request->input('longitude');
+            $long = $request->input('longitude');
+
+            $long = preg_replace('/[^0-9.\-]/', '', $long);
+            $port->longitude = $long;
         }
 
         if($request->has('latitude')) {
-            $port->latitude = $request->input('latitude');
+            $lat = $request->input('latitude');
+
+            $lat = preg_replace('/[^0-9.\-]/', '', $lat);
+            $port->latitude = $lat;
         }
 
         if($request->has('country')) {

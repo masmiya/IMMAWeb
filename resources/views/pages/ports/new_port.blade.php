@@ -89,7 +89,7 @@
 
         function myMap() {
 
-            var myCenter = new google.maps.LatLng(lng,lat);
+            var myCenter = new google.maps.LatLng(lat,lng);
             var mapProp= {
                 center:myCenter,
                 zoom:5
