@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Ports - New')
+@section('title', 'Ports - Edit')
 @section('header')
 
     <![endif]-->
@@ -44,9 +44,8 @@
 
                                 <div class="form-group">
                                     <label>Location</label> <br>
-                                    Longitude: <input class="form-control" id="olng" name="longitude" value="{{$port->longitude}}">
-
                                     Latitude: <input class="form-control" id="olat" name="latitude" value="{{$port->latitude}}">
+                                    Longitude: <input class="form-control" id="olng" name="longitude" value="{{$port->longitude}}">
 
                                     <div id="googleMap" style="height: 400px; width: 100%;"></div>
                                 </div>

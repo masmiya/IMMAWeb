@@ -46,7 +46,7 @@
                                 <tr class="odd gradeX datarow" data-id="{{$port->id}}">
                                     <td>{{$port->id}}</td>
                                     <td>{{$port->name}}</td>
-                                    <td>({{$port->longitude}},{{$port->latitude}})</td>
+                                    <td>({{$port->latitude}},{{$port->longitude}})</td>
                                     <td>{{$port->country}}</td>
                                     <td>{{$port->description}}</td>
                                     <td class="center remove-row">

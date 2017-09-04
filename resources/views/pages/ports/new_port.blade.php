@@ -43,9 +43,10 @@
 
                                 <div class="form-group">
                                     <label>Location</label> <br>
+                                    Latitude: <input class="form-control" id="olat" name="latitude">
+
                                     Longitude: <input class="form-control" id="olng" name="longitude">
 
-                                    Latitude: <input class="form-control" id="olat" name="latitude">
                                     <div id="googleMap" style="height: 400px; width: 100%;"></div>
                                 </div>
 
